@@ -1,5 +1,9 @@
 # Prerequisites
 *.d
+.vs/
+*.vcxproj
+*.filters
+*.user
 
 # Compiled Object files
 *.slo
@@ -30,3 +34,5 @@
 *.exe
 *.out
 *.app
+x64/*
+ProgrammingCourse/x64/*
