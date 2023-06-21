@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <numeric>
+#include <string>
 
 void SectionFourChallenge()
 {
@@ -205,4 +206,31 @@ void SectionNineChallenge()
 		std::cout << std::endl;
 	}
 
+}
+
+void SectionTenChallenge()
+{
+	std::string alphabet{"ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"};
+	std::string cypher_key{"QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnmp"};
+	std::string message{};
+	std::string encrypted_message{};
+	std::string decrypted_message{};
+
+	std::cout << "Type your super secret message:\n";
+	getline(std::cin, message);
+	size_t index{};
+	for (char letter : message)
+	{
+		index = alphabet.find(letter);
+		encrypted_message += cypher_key.at(index);
+	}
+	std::cout << "Your encrypted message is: \n" << encrypted_message << std::endl;
+
+	for (char letter : encrypted_message)
+	{
+		index = cypher_key.find(letter);
+		decrypted_message += alphabet.at(index);
+	}
+
+	std::cout << "Your decrypted message is: \n" << decrypted_message << std::endl;
 }

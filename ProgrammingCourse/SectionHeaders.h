@@ -5,3 +5,4 @@ void SectionSixChallenge();
 void SectionSevenChallenge();
 void SectionEightChallenge();
 void SectionNineChallenge();
+void SectionTenChallenge();
