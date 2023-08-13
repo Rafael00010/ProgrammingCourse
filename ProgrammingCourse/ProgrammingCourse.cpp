@@ -14,7 +14,7 @@ int main()
     //SectionElevenChallenge();
     //SectionTwelveChallenge();
     
-    MoveCtorS13();
+    //MoveCtorS13();
     //Section13Challenge();
     //Section14ChallengeS1();
     //Section15Challenge();
@@ -22,6 +22,7 @@ int main()
 
     //Section17Challenge();
 
+    Section18Challenge();
     int end{};
     std::cin >> end;
     return 0;

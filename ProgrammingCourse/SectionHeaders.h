@@ -14,4 +14,5 @@ void Section14ChallengeS1();
 void Section15Challenge();
 void Section16Challenge();
 void Section17Challenge();
+void Section18Challenge();
 int sum_of_digits(int n);

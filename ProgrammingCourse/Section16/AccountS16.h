@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 #include "I_Printable.h"
+#include "../IllegalBalanceException.h"
+#include "../InsufficientFundsException.h"
 
 class AccountS16 : public I_Printable 
 {

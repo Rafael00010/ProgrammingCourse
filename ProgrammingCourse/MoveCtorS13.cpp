@@ -57,9 +57,10 @@ void MoveCtorS13()
     100;
 
     Move value{ 100 };
+    Move* pointer = new Move(200);
     Move(1000);
 
-    vec.push_back(value);
+    vec.push_back(*pointer);
     vec.push_back(Move{ 20 });
     vec.push_back(Move{ 30 });
     vec.push_back(Move{ 40 });

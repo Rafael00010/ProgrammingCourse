@@ -3,6 +3,8 @@
 AccountS16::AccountS16(std::string name, double balance)
     : name{ name }, balance{ balance } 
 {
+    if (balance < 0.0)
+        throw IllegalBalanceException();
 }
 
 bool AccountS16::deposit(double amount) 
@@ -22,7 +24,10 @@ bool AccountS16::withdraw(double amount)
         return true;
     }
     else
-        return false;
+    {
+        throw InsufficientFundsException{};
+    }
+        
 }
 
 void AccountS16::print(std::ostream& os) const 
