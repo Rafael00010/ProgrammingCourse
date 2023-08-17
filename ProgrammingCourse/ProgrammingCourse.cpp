@@ -21,8 +21,18 @@ int main()
     //Section16Challenge();
 
     //Section17Challenge();
+    //Section18Challenge();
 
-    Section18Challenge();
+    //Section19ChallengeS1();
+    //Section19ChallengeS2();
+    //Section19ChallengeS3();
+    //Section19ChallengeS4();
+
+    //Section20ChallengeS1();
+    //Section20ChallengeS2();
+    //Section20ChallengeS3();
+    Section20ChallengeS4();
+
     int end{};
     std::cin >> end;
     return 0;
